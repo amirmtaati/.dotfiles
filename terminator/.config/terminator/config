@@ -1,0 +1,48 @@
+[global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  title_use_system_font = False
+  title_font = Monospace 15
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#1e2127"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Monospace 18
+    foreground_color = "#c0bfbc"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+  [[Gruvbox Dark]]
+    background_color = "#1e1e1e"
+    background_darkness = 0.97
+    background_type = transparent
+    cursor_color = "#bbbbbb"
+    font = Monospace 18
+    foreground_color = "#e6d4a3"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#161819:#f73028:#aab01e:#f7b125:#719586:#c77089:#7db669:#faefbb:#7f7061:#be0f17:#868715:#cc881a:#377375:#a04b73:#578e57:#e6d4a3"
+    use_system_font = False
+  [[One dark]]
+    background_color = "#1e2127"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#676c76"
+    font = Monospace 18
+    foreground_color = "#deddda"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
