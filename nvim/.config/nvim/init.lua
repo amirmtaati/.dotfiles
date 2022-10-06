@@ -1,5 +1,3 @@
-print("Hello World")
-
 for _, source in ipairs {
 	"core.options",
     "core.plugins",

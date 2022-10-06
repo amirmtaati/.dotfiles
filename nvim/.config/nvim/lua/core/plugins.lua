@@ -55,7 +55,7 @@ return require("packer").startup(function()
     use("williamboman/mason.nvim")
 
     -- Lua Snippet
-    use("L3MON4D3/LuaSnip")
+    --    use("L3MON4D3/LuaSnip")
 
     -- Popup API writen in Lua
     use("nvim-lua/popup.nvim")
