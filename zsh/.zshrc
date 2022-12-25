@@ -9,12 +9,13 @@ PATH="$HOME/bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
 PATH=$PATH:/usr/local/go/bin
 PATH=$PATH:/$GOPATH/bin  
+PATH=$PATH:/usr/local/texlive/2022/bin/x86_64-linux
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="awesomepanda"
 #ZSH_TMUX_AUTOSTART=true
 
 # Set list of themes to pick from when loading at random
@@ -77,7 +78,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git tmux vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,7 +115,11 @@ alias v=nvim
 alias suspend="i3lock & sudo systemctl suspend"
 alias turnoff="sudo shutdown now"
 alias reboot="sudo reboot"
+alias julia="~/Downloads/julia/bin/julia"
 
-. ~/.nix-profile/etc/profile.d/nix.sh
+#. ~/.nix-profile/etc/profile.d/nix.sh
 
+bindkey -v
+#cat ~/Documents/todo/todo-$(date --iso-8601).md
 if [ "$TMUX" = "" ]; then tmux; fi
+

@@ -17,6 +17,9 @@ return require("packer").startup(function()
     -- Bufferline
     use("akinsho/bufferline.nvim")
 
+    -- Treesiter
+    use("nvim-treesitter/nvim-treesitter")
+
     -- File Explorer
     use({
         "nvim-neo-tree/neo-tree.nvim",
@@ -65,4 +68,8 @@ return require("packer").startup(function()
 
     -- Greatest Fuzzy Finder ever
     use("nvim-telescope/telescope.nvim")
+
+    use("vim-pandoc/vim-pandoc")
+    use("junegunn/goyo.vim")
+    use("preservim/vim-markdown")
 end)

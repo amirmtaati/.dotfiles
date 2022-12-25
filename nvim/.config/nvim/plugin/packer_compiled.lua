@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/mamad/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["goyo.vim"] = {
+    loaded = true,
+    path = "/home/mamad/.local/share/nvim/site/pack/packer/start/goyo.vim",
+    url = "https://github.com/junegunn/goyo.vim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/mamad/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -160,6 +165,11 @@ _G.packer_plugins = {
     path = "/home/mamad/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/mamad/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/mamad/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -189,6 +199,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mamad/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/home/mamad/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
+  },
+  ["vim-pandoc"] = {
+    loaded = true,
+    path = "/home/mamad/.local/share/nvim/site/pack/packer/start/vim-pandoc",
+    url = "https://github.com/vim-pandoc/vim-pandoc"
   }
 }
 

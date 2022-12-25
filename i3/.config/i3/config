@@ -125,13 +125,16 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Turn Lock into Ctrl
 # $exec setxkbmap -option ctrl:nocaps & 
 
-# Firefox on workspace 1
-assign [class="Firefox"] $ws2
-exec firefox &
-
-# Terminator on workspace 2
+# Terminator on workspace 1
 assign [class="Terminator"] $ws1 
 exec terminator 
+
+# Firefox on workspace 2
+assign [class="Firefox"] $ws2
+
+# Thunderbird on workspace 3
+#assign [class="Thunderbird"] $ws3 
+#exec thunderbird
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
