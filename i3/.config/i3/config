@@ -126,11 +126,13 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # $exec setxkbmap -option ctrl:nocaps & 
 
 # Terminator on workspace 1
-assign [class="Terminator"] $ws1 
-exec terminator 
+assign [class="Alacritty"] $ws1 
+exec alacritty 
 
 # Firefox on workspace 2
 assign [class="Firefox"] $ws2
+
+assign [class="Tor Browser"] $ws9
 
 # Thunderbird on workspace 3
 #assign [class="Thunderbird"] $ws3 

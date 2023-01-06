@@ -10,6 +10,15 @@ return require("packer").startup(function()
     use("folke/tokyonight.nvim")
     use("tanvirtin/monokai.nvim")
     use("EdenEast/nightfox.nvim")
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
+
+
 
     -- Simple statusline written in Lua
     use("nvim-lualine/lualine.nvim")
@@ -72,4 +81,5 @@ return require("packer").startup(function()
     use("vim-pandoc/vim-pandoc")
     use("junegunn/goyo.vim")
     use("preservim/vim-markdown")
+    use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
 end)

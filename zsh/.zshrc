@@ -49,7 +49,7 @@ ZSH_THEME="awesomepanda"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -116,10 +116,12 @@ alias suspend="i3lock & sudo systemctl suspend"
 alias turnoff="sudo shutdown now"
 alias reboot="sudo reboot"
 alias julia="~/Downloads/julia/bin/julia"
+alias tor="cd tor&&./start-tor-browser.desktop && cd"
 
 #. ~/.nix-profile/etc/profile.d/nix.sh
 
 bindkey -v
+feh --no-fehbg --bg-scale '/home/mamad/Pictures/wallpapers/wallpaper4.jpg' 
 #cat ~/Documents/todo/todo-$(date --iso-8601).md
 if [ "$TMUX" = "" ]; then tmux; fi
 
